@@ -64,6 +64,10 @@ class Produtor extends Thread{
 
       var rand : Random = new Random();
 
+    var tuplas : Array[(String,Int)] = Array(("A",5),("B",1),("C",2),("D",10),("E",5),("F",6),("G",15),("H",9),("I",10),("J",20));
+
+
+
       while(true){
 
         var placa = gerarPlaca();
