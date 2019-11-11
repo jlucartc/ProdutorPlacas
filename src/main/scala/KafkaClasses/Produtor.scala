@@ -66,25 +66,25 @@ class Produtor extends Thread{
 
     var tuplas : Array[(String,Int)] = Array(("A",5),("B",1),("C",2),("D",10),("E",5),("F",6),("G",15),("H",9),("I",10),("J",20));
 
-
-
       while(true){
 
-        var placa = gerarPlaca();
+        var rand = new Random();
+
+        var placa = placas(rand.nextInt(5));
 
         var producer : Producer[String,String] = new KafkaProducer(props);
 
         var date = new Date();
         var timestamp = new Timestamp(date.getTime());
 
-        var record : ProducerRecord[String,String] = new ProducerRecord("placas",placa/*timestamp.getTime().toString+";"+placas(rand.nextInt(9))*/);
+        var record : ProducerRecord[String,String] = new ProducerRecord("placas",placa+";"+1/*timestamp.getTime().toString*/);
 
         producer.send(record);
         producer.close();
 
         println("Placa produzida: "+placa);
 
-        TimeUnit.MILLISECONDS.sleep(rand.nextInt(10)*100);
+        TimeUnit.MILLISECONDS.sleep(rand.nextInt(10)*10);
 
       }
 
