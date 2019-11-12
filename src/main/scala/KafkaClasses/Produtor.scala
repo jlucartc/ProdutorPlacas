@@ -68,16 +68,18 @@ class Produtor extends Thread{
 
       while(true){
 
-        var rand = new Random();
+        var rand = new Random()
 
-        var placa = tuplas(rand.nextInt(10));
+        var placa = placas(rand.nextInt(10));
+
+        //var placa = gerarPlaca()
 
         var producer : Producer[String,String] = new KafkaProducer(props);
 
         var date = new Date();
         var timestamp = new Timestamp(date.getTime());
 
-        var record : ProducerRecord[String,String] = new ProducerRecord("placas",placa.toString())
+        var record : ProducerRecord[String,String] = new ProducerRecord("placas",placa)
 
         producer.send(record);
         producer.close();
