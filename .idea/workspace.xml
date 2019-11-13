@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a7f3c012-d7f0-47c7-aca3-d0d7c23491de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$15fa0c08d19802d0a9cd$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$15fa0c08d19802d0a9cd.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$15fa0c08d19802d0a9cd.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/KafkaClasses/Produtor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/KafkaClasses/Produtor.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/KafkaClasses/Produtor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/KafkaClasses/Produtor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/produtorplacas_2.12-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/produtorplacas_2.12-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
