@@ -10,6 +10,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/paulorego/ProdutorPlacas/target/scala-2.12/classes/Main.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	KafkaClasses[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/paulorego/ProdutorPlacas/target/scala-2.12/classes/KafkaClasses[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaClasses/PlacasCEPProdutor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/paulorego/ProdutorPlacas/target/scala-2.12/classes/KafkaClasses/PlacasCEPProdutor.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	KafkaClasses/Consumidor.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/paulorego/ProdutorPlacas/target/scala-2.12/classes/KafkaClasses/Consumidor.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	KafkaClasses/Produtor.class[0m
