@@ -1,9 +1,10 @@
 package KafkaClasses
 
 import java.sql.Timestamp
+import java.text.SimpleDateFormat
 
 import org.apache.kafka.clients.producer._
-import java.util.{Date, Properties, Random}
+import java.util.{Calendar, Date, Properties, Random}
 import java.util.concurrent.TimeUnit
 
 class PlacasCEPProdutor extends Thread {
@@ -21,39 +22,7 @@ class PlacasCEPProdutor extends Thread {
     }
   }
 
-  def gerarPlaca() : String = {
 
-    val tamanhoLetras : Int = 3
-    val tamanhoNumeros : Int = 4
-    val letras: String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-    var i : Int = 0
-    var palavra : String = ""
-
-    var rand : Random = new Random()
-
-    for( i <- 0 until tamanhoLetras){
-
-      var numero = rand.nextInt(5)
-
-      palavra+= letras.substring(numero,numero+1)
-
-
-    }
-
-    palavra+="-"
-
-    for(i <- 0 until tamanhoNumeros){
-
-      var numero = rand.nextInt(5)
-
-      palavra+= Integer.toString(numero)
-
-    }
-
-    palavra
-
-  }
 
   def publicarPlaca() {
 
@@ -64,35 +33,11 @@ class PlacasCEPProdutor extends Thread {
     props.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer")
     props.put("acks","1")
 
-    var i = 0
-
-    //var tuplas : Array[(String,Int)] = Array(("A",5),("B",1),("C",2),("D",10),("E",5),("F",6),("G",15),("H",9),("I",10),("J",20))
+    val producer : Producer[String,String] = new KafkaProducer(props)
 
     val rand = new Random()
 
-    //val placa = placas(rand.nextInt(10))
-
-    Thread.sleep(10)
-
-    var placa = gerarPlaca()
-
-    val producer : Producer[String,String] = new KafkaProducer(props)
-
-    //val date = new Date()
-
-    val hora = rand.nextInt(15)
-
-    val minuto = rand.nextInt(59)
-
-    val data = "2019-11-19 "+hora.toString+":"+minuto.toString+":"+"00"
-
-    val timestamp = Timestamp.valueOf(data)
-
-    val lat = rand.nextFloat()*100
-
-    val long = rand.nextFloat()*100
-
-    val record : ProducerRecord[String,String] = new ProducerRecord("placas-cep",placa+";"+timestamp.getTime.toString+";"+lat+";"+long)
+    val record : ProducerRecord[String,String] = new ProducerRecord("cep-placas","2019-12-16 "+"1"+rand.nextInt(9).toString+":20:36"+";0.0000;0.0000")
 
     producer.send(record)
 

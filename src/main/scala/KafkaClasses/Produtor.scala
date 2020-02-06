@@ -68,7 +68,7 @@ class Produtor extends Thread{
 
         val rand = new Random()
 
-        val placa = placas(rand.nextInt(10))
+        val placa = placas(rand.nextInt(9))
 
         Thread.sleep(10)
 

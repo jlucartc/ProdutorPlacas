@@ -1,2 +1,3 @@
 # ProdutorPlacas
-Produzindo placas com produtor Kafka
+Projeto de teste para configurar um produtor Kafka que emite dados para determinado tópico.
+

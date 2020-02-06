@@ -23,3 +23,5 @@ libraryDependencies += "org.apache.flink" % "flink-core" % "1.9.1"
 libraryDependencies += "org.apache.flink" %% "flink-runtime-web" % "1.9.1" % Test
 
 libraryDependencies += "org.apache.flink" %% "flink-clients" % "1.9.1"
+
+libraryDependencies += "org.apache.flink" %% "flink-cep" % "1.9.1"
